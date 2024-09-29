@@ -146,7 +146,7 @@ else{cont = cont + 1
 
 let percent = (cont*100)/7 
 
-alert("Hai totalizzato una percentuale pari a : " + percent )
+console.log("Hai totalizzato una percentuale pari a : " + percent.toFixed(2)  + "%")
 
 
 //prompt è una funzione che chiede un'input all'utente e funziona
