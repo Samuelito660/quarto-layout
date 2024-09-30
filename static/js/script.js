@@ -22,7 +22,7 @@ while(firstName === null){
 
 }*/
 
-    
+ 
 
 let cont = 0
 
@@ -147,6 +147,36 @@ else{cont = cont + 1
 let percent = (cont*100)/7 
 
 console.log("Hai totalizzato una percentuale pari a : " + percent.toFixed(2)  + "%")
+
+// esercitazione in classe 
+
+function InputSanitize(){
+
+let valore = prompt("Inserire una parola da sanificare:")
+ valore = valore.trim()
+ valore = valore.toLowerCase()
+
+alert(valore)
+
+    return valore
+}
+
+
+function CalcPercent(){
+
+    let valore = prompt("Inserire un valore di cui si vuole sapere la percentuale :")
+    percentES = (valore*100)/100
+
+    alert(percentES + "%")
+    return percentES
+}
+
+InputSanitize()
+CalcPercent()
+
+
+
+
 
 
 //prompt è una funzione che chiede un'input all'utente e funziona
